@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+				<html>
+					<head>
+				    	<title>PATH-SCAN</title>
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+					</head>
+					<script>
+					var checked = false;
+					function irb_toggle() {
+						if (checked) {
+							checked = false;
+							document.getElementById('submitlink').href = '#';
+							document.getElementById('submitlink').className = 'btn btn-inactive';
+
+						} else {
+							checked = true;
+							document.getElementById('submitlink').href = 'http://www.stanford.edu/~zappala/cgi-bin/pathscan_submit.cgi?hash=81b85b6b7f7ada1477e7baa0ec153a8f5cc9a7e6a249ae07715c37fb46e87c8a&count=0';
+							document.getElementById('submitlink').className = 'btn btn-success';
+						
+						}
+					}
+					</script>
+					<body style='width:80%;margin: 0 auto;'>
+				   		<h3>PATH-SCAN</h3><pre>Note that all end-user services are undetaken with your privacy in mind; no data is transferred to our server and the entire annotation process is carried out on your machine.</pre><table class='table table-striped'><thead><th>#</th><th>Gene</th><th>Condition</th><th>RSID</th><th>Chromosome</th><th>Position</th><th>Sample</th><th>OMIM Reports</th><th>Gene Reviews</th></thead><tbody></tbody></table>
+					<div class='alert alert-info'><b>OPTIONAL</b>&nbsp;&nbsp;&nbsp;Please consider submitting these <i>completely anonymized</i> results for research purposes (no identifying information will be sent).
+					&nbsp;&nbsp;&nbsp;<br/>
+					
+						<i class="icon-file"></i>&nbsp;&nbsp;&nbsp;<a href='IRB.pdf'>IRB Consent Form</a> (PDF)
+						<br/>
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" onclick='javascript:irb_toggle()'>
+						    <strong>I have read and agreed to the IRB consent form.</strong>
+						  </label>
+						  <a id='submitlink' href='#' class='btn btn-inactive'>Submit</a>
+						  </div>	
+						</div>
+					
+										
+						
+					<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">PATH-SCAN</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+					</body>
+				</html>
